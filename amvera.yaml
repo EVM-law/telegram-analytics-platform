@@ -1,0 +1,12 @@
+---
+version: null
+meta:
+  environment: python
+  toolchain:
+    name: pip
+    version: 3.11
+build:
+  requirementsPath: requirements.txt
+run:
+  command: uvicorn app:app --host 0.0.0.0 --port 80
+  containerPort: 80
